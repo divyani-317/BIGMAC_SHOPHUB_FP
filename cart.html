@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Cart</title>
+    <link rel="stylesheet" href="css/cart.css">
+    <!-- favicon -->
+    <link rel="icon" href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo" type="image/gif" sizes="16x16">
+    <!-- header links -->
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+</head>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .cart-item {
+        display: flex;
+        margin-bottom: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .item-image {
+        flex: 1;
+        max-width: 150px;
+        overflow: hidden;
+    }
+
+    .item-image img {
+        width: 100%;
+        height: 100px;
+        object-fit: contain;
+        border-radius: 8px 0 0 8px;
+    }
+
+    .item-details {
+        flex: 2;
+        padding: 15px;
+    }
+
+    .item-name {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .item-price {
+        color: #e74c3c;
+        font-size: 16px;
+    }
+    .delete-btn {
+        background-color: #e74c3c;
+        color: #fff;
+        border: none;
+        padding: 8px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .delete-btn:hover {
+        background-color: #c0392b;
+    }
+</style>
+<body>
+        <!-- HEADER -->
+    <div id="1"></div>
+    <script>
+        load("header.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(1).innerHTML = req.responseText;
+        }
+    </script>
+
+        <!-- CART CONTAINER -->
+    <div id="cartMainContainer">
+        <h1> Checkout </h1>
+        <h3 id="totalItem"> Total Items: 0 </h3>
+
+        <div id="cartContainer">
+            <!-- JS rendered code -->
+        </div>
+
+        <main>
+            <div class="cart-item">
+                <div class="item-image">
+                    <img src="img/puma-men.jpg" alt="Product 1">
+                </div>
+                <div class="item-details">
+                    <div class="item-name">Men Black MAMGP T7 Sweat Sporty Jacket</div>
+                    <div class="item-price">$79.99</div>
+                    <button class="delete-btn" onclick="deleteItem(this)">Delete</button>
+                </div>
+            </div>
+    
+            <div class="cart-item">
+                <div class="item-image">
+                    <img src="img/benetton.jpg" alt="Product 2">
+                </div>
+                <div class="item-details">
+                    <div class="item-name">Men Navy Blue Solid Sweatshirt</div>
+                    <div class="item-price">$25.99</div>
+                    <button class="delete-btn" onclick="deleteItem(this)">Delete</button>
+                </div>
+            </div>
+    
+            <!-- Add more items as needed -->
+    
+            <div>
+                <h2>Total: $105.98</h2>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+    <!-- FOOTER -->
+    <div id="4"></div>
+    <script>
+        load("footer.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(4).innerHTML = req.responseText;
+        }
+
+    </script>
+
+<script src="/cart.js"></script>
+</html>
+
+
+

@@ -1,0 +1,83 @@
+/* Add your existing styles here */
+#mainContainer {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+#mainContainer h1 {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #333;
+}
+
+#containerAccessories {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#box {
+    width: 100%;
+    background-color: white;
+    align-content: center;
+    border-radius: 10px;
+    box-shadow: 1px 2px 6px 2px rgb(219, 219, 219);
+}
+
+#box:hover {
+    box-shadow: 1px 6px 3px 0 rgb(185, 185, 185);
+}
+
+#containerAccessories img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#details {
+    padding: 0 15px;
+    text-transform: capitalize;
+}
+
+#box a {
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+}
+
+h3 {
+    font-size: 16px;
+}
+
+h4 {
+    font-weight: 100;
+}
+
+h2 {
+    color: rgb(3, 94, 94);
+}
+
+/* Media Query for Responsive Design */
+@media(max-width: 850px) {
+    #containerAccessories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 600px) {
+    #containerAccessories {
+        grid-template-columns: 1fr;
+    }
+}
