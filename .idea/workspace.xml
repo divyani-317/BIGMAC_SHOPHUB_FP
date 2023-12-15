@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bdf3907-88fa-4434-82b4-51b61a581488" name="Changes" comment="changes added">
-      <change afterPath="$PROJECT_DIR$/accesories.html" afterDir="false" />
+    <list default="true" id="8bdf3907-88fa-4434-82b4-51b61a581488" name="Changes" comment="Accesories page and Cart page changes added">
+      <change afterPath="$PROJECT_DIR$/css/orderPlaced.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orderPlaced.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/orderPlaced.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/slider.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +106,15 @@
       <option name="project" value="LOCAL" />
       <updated>1702678620138</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Accesories page and Cart page changes added">
+      <option name="closed" value="true" />
+      <created>1702679868425</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702679868425</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,6 +132,7 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="Login and Registration committed" />
     <MESSAGE value="changes added" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes added" />
+    <MESSAGE value="Accesories page and Cart page changes added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Accesories page and Cart page changes added" />
   </component>
 </project>
