@@ -1,3 +1,4 @@
+//  Divyani c0895317
 document.addEventListener('DOMContentLoaded', function () {
     var registerForm = document.getElementById('registerForm');
     var progressBar = document.getElementById('progressBar');
